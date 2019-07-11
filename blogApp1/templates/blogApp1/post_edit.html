@@ -1,0 +1,17 @@
+<!--
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Jul 11 12:47:36 2019
+
+@author: nobody
+"""
+-->
+{% extends 'blogApp1/base.html' %}
+
+{% block content %}
+    <h1>New post</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+{% endblock %}
