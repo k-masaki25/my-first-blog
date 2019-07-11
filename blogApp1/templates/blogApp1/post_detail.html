@@ -1,0 +1,21 @@
+<!--
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Jul 11 12:23:27 2019
+
+@author: nobody
+"""
+-->
+{% extends 'blogApp1/base.html' %}
+
+{% block content %}
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endblock %}
