@@ -120,3 +120,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')  #changed by DjangoGirlsTutorial
+
+LOGIN_REDIRECT_URL = '/'  #changed by DjangoGirlsTutorialログイン成功後に飛ばされるURLを設定している
